@@ -35,6 +35,9 @@ class RegisterView extends GetView<RegisterController> {
                 ),
               ),
             ),
+            const SizedBox(
+              height: 10,
+            ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 15),
               child: TextField(
@@ -45,6 +48,9 @@ class RegisterView extends GetView<RegisterController> {
                   hintText: 'Masukan Email',
                 ),
               ),
+            ),
+            const SizedBox(
+              height: 10,
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 15),
@@ -57,6 +63,9 @@ class RegisterView extends GetView<RegisterController> {
                   hintText: 'Masukan Password',
                 ),
               ),
+            ),
+            const SizedBox(
+              height: 10,
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 15),
