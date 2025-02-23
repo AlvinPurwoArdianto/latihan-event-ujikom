@@ -66,12 +66,42 @@ class EventDetailView extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 16),
-            Text(
-              'Event Date: ${event.eventDate!}',
-              style: const TextStyle(
-                fontSize: 16,
-                color: Colors.black,
-              ),
+            Row(
+              children: [
+                const Icon(
+                  Icons.calendar_month,
+                  color: Colors.red,
+                ),
+                const SizedBox(width: 8),
+                Expanded(
+                  child: Text(
+                    event.eventDate!,
+                    style: const TextStyle(
+                      fontSize: 16,
+                      color: Colors.black,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            const SizedBox(height: 16),
+            Row(
+              children: [
+                const Icon(
+                  Icons.person,
+                  color: Colors.red,
+                ),
+                const SizedBox(width: 8),
+                Expanded(
+                  child: Text(
+                    'Created By: ${event.dibuatOleh!}',
+                    style: const TextStyle(
+                      fontSize: 16,
+                      color: Colors.black,
+                    ),
+                  ),
+                ),
+              ],
             ),
           ],
         ),
